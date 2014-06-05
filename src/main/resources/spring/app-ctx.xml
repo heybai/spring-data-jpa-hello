@@ -15,4 +15,8 @@
     <!-- Need to enable mapping to JSON -->
     <mvc:annotation-driven />
 
+    <context:property-placeholder location="classpath*:properties/app-prop.properties"/>
+
+    <import resource="classpath*:spring/persist-ctx.xml"/>
+
 </beans>
