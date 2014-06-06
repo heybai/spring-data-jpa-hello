@@ -1,11 +1,13 @@
-package com.heybai.exx.springdata.hello;
+package com.heybai.exx.springdata.hello.domain;
 
 import com.heybai.ex.springdata.hello.domain.User;
 import com.heybai.ex.springdata.hello.domain.UserRepository;
+import com.heybai.exx.springdata.hello.AbstractSeedTest;
+import com.heybai.exx.springdata.hello.AbstractTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
 
-public class UserRepositoryTest extends AbstractTest {
+public class UserRepositorySeedTest extends AbstractSeedTest {
 
     @Autowired private UserRepository userRepository;
 

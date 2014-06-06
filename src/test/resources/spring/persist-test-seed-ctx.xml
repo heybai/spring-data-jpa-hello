@@ -14,7 +14,7 @@
 
     <bean id="flyway" class="com.heybai.ex.springdata.hello.MyFlyway" depends-on="dataSource">
         <property name="dataSource" ref="dataSource"/>
+        <property name="locations" value="db.migration,db/seed"/>
         <property name="initAction" value="CLEAN_MIGRATE"/>
     </bean>
-
 </beans>
