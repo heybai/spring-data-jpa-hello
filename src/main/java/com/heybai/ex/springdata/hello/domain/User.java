@@ -1,8 +1,13 @@
 package com.heybai.ex.springdata.hello.domain;
 
+import org.hibernate.annotations.Cache;
+
 import javax.persistence.*;
 
+import static org.hibernate.annotations.CacheConcurrencyStrategy.READ_WRITE;
+
 @Entity @Table(name = "user")
+@Cache(usage = READ_WRITE)
 public class User {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

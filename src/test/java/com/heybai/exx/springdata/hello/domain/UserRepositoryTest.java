@@ -13,7 +13,7 @@ public class UserRepositoryTest extends AbstractTest {
     @Test public void ttt() {
         System.out.println("users: " + userRepository.findAll());
         userRepository.save(new User("Pol"));
-        System.out.println("users: " + userRepository.findAll());
+        System.out.println("saved users: " + userRepository.findAll());
     }
 
     @Test public void ttt2() {

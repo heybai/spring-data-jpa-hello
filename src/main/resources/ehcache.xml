@@ -1,0 +1,15 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+         updateCheck="true" monitoring="autodetect" dynamicConfig="true">
+
+    <defaultCache
+            maxElementsInMemory="20000"
+            eternal="false"
+            timeToIdleSeconds="172800"
+            timeToLiveSeconds="172800"
+            overflowToDisk="false" />
+
+    <cache name="com.heybai.ex.springdata.hello.domain.User"
+           maxElementsInMemory="1"/>
+
+</ehcache>
